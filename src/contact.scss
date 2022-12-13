@@ -5,6 +5,13 @@
   margin-bottom: 24px;
   padding-left: 16px;
   padding-right: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @media screen and (min-width: 992px) {
+    margin-top: 133px;
+    margin-bottom: 44px;
+  }
   &-title {
     font-size: 34px;
     font-weight: 500;
@@ -13,6 +20,12 @@
     color: #fff;
     text-align: center;
     margin-bottom: 16px;
+    @media screen and (min-width: 992px) {
+      font-size: 60px;
+      font-weight: 700;
+      line-height: 71px;
+      letter-spacing: -0.5px;
+    }
   }
   &-description {
     font-size: 14px;
@@ -21,12 +34,21 @@
     letter-spacing: 0.1px;
     color: #fff;
     text-align: center;
+    max-width: 706px;
+    @media screen and (min-width: 992px) {
+      font-size: 16px;
+      line-height: 20px;
+      letter-spacing: 0.15px;
+    }
   }
 }
 
 .data {
   margin-bottom: 64px;
   padding: 0 16px;
+  @media screen and (min-width: 992px) {
+    margin-bottom: 128px;
+  }
   &-form {
     padding: 24px;
     background-color: $grayColor;
@@ -34,6 +56,10 @@
     flex-direction: column;
     gap: 24px;
     border-radius: 8px;
+    max-width: 447px;
+    margin: 0 auto;
+    @media screen and (min-width: 992px) {
+    }
     &-container {
       display: flex;
       flex-direction: column;
