@@ -32,6 +32,19 @@ button {
   right: 0;
   &-links {
     display: none;
+    &.mobile {
+      background-color: $backgroundColor;
+      position: fixed;
+      top: 66px;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+      z-index: 100;
+      padding: 28px 16px 0 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+    }
     @media screen and (min-width: 992px) {
       display: flex;
     }
@@ -55,8 +68,20 @@ button {
       }
     }
   }
+  .close-menu {
+    display: none;
+    &.mobile {
+      display: flex;
+    }
+  }
+  .burguer-button {
+    &.mobile {
+      display: none;
+    }
+  }
   @media screen and (min-width: 992px) {
-    .burguer-button {
+    .burguer-button,
+    .close-menu {
       display: none;
     }
   }
