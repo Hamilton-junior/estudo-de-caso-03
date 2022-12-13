@@ -1,0 +1,72 @@
+@import "./styles.scss";
+
+.contact-header {
+  margin-top: 93px;
+  margin-bottom: 24px;
+  padding-left: 16px;
+  padding-right: 16px;
+  &-title {
+    font-size: 34px;
+    font-weight: 500;
+    line-height: 40px;
+    letter-spacing: 0.25px;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 16px;
+  }
+  &-description {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+    color: #fff;
+    text-align: center;
+  }
+}
+
+.data {
+  margin-bottom: 64px;
+  padding: 0 16px;
+  &-form {
+    padding: 24px;
+    background-color: $grayColor;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    border-radius: 8px;
+    &-container {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      &-label {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 28px;
+        letter-spacing: 0.44px;
+        color: #fff;
+      }
+      &-input,
+      &-textarea {
+        border-radius: 8px;
+        border: 1px solid $borderColor;
+        padding: 16px 20px;
+        background-color: $backgroundColorInputs;
+        color: #a0a0a1;
+      }
+      &-textarea {
+        height: 150px;
+      }
+    }
+    &-button {
+      width: 100%;
+      border-radius: 8px;
+      padding: 16px 8px;
+      background-color: $primaryColor;
+      text-align: center;
+      color: #fff;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 16px;
+    }
+  }
+}
